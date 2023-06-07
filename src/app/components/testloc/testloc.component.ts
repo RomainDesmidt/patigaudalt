@@ -16,6 +16,18 @@ export class TestlocComponent {
   ngOnInit(): void {
     this.getCurrentPosition();
   }
+/*
+  getCurrentPosition(): void {
+    this.geoloc.getCurrentPosition()
+    .then((coords) => {
+      this.latitude = coords.latitude
+      this.longitude = coords.longitude
+    })
+    .catch((error) => {
+      console.error(error);
+    })
+  }
+  */
 
   getCurrentPosition(): void {
     this.geoloc.getCurrentPosition().subscribe({
